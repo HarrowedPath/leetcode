@@ -2,7 +2,6 @@ package easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
@@ -17,7 +16,9 @@ public class TwoSum {
     }
 
     public int[] twoSum (int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
+
+
+        var map = new HashMap<Integer, Integer>();
         int i1 = 0;
         int i2 = 0;
         for (int i = 0; i < nums.length; i++) {
