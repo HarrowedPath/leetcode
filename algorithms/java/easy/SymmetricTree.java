@@ -20,12 +20,12 @@ public class SymmetricTree {
 
         boolean output = false;
 
-        assert output == new  SymmetricTree().iterative(root);
+        assert output == new  SymmetricTree().BFSiterative(root);
         assert output == new  SymmetricTree().recursive(root);
     }
 
 
-    public boolean iterative(TreeNode root) {
+    public boolean BFSiterative(TreeNode root) {
         if (root == null) {
             return false;
         }
