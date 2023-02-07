@@ -9,7 +9,7 @@ public class BestTimeToBuyAndSellStock {
     }
 
     public int maxProfit(int[] prices) {
-        int min = 10000;
+        int min = Integer.MAX_VALUE;
         int maxProfit = 0;
         int todayProfit;
 
