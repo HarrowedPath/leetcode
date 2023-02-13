@@ -21,8 +21,6 @@ public class ValidPalindrome {
                 j--;
                 continue;
             }
-            iChar = iChar;
-            jChar = jChar;
             if (iChar != jChar) {
                 return false;
             }
