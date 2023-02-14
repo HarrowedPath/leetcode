@@ -4,6 +4,7 @@ public class LongestCommonPrefix {
     public static void main(String[] args) {
         String expectedOutput = "fl";
         assert expectedOutput.equals(new LongestCommonPrefix().longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
+        assert expectedOutput.equals(new LongestCommonPrefix().longestCommonPrefixBruteForce(new String[]{"flower", "flow", "flight"}));
     }
 
     public String longestCommonPrefix(String[] strs) {
