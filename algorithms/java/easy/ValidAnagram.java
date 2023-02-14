@@ -31,7 +31,7 @@ public class ValidAnagram {
         }
         HashMap<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
-            map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+            map.compute(s.charAt(i), (k, v) -> (v == null) ? 1 : ++v);
         }
         for (int i = 0; i < t.length(); i++) {
             if (!map.containsKey(t.charAt(i))) {
@@ -40,7 +40,7 @@ public class ValidAnagram {
             if (map.get(t.charAt(i)) == 1) {
                 map.remove(t.charAt(i));
             } else {
-                map.put(t.charAt(i), map.getOrDefault(t.charAt(i), 0) - 1);
+                map.compute(t.charAt(i), (k, v) -> (v == null) ? 0 : --v);
             }
         }
         return map.size() == 0;
@@ -58,5 +58,4 @@ public class ValidAnagram {
         }
         return sMap.equals(tMap);
     }
-
 }
