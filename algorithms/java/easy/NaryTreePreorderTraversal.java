@@ -24,8 +24,9 @@ public class NaryTreePreorderTraversal {
 
     public List<Integer> preorder(Node root) {
         var res = new ArrayList<Integer>();
-        if (root == null)
+        if (root == null) {
             return res;
+        }
         traverse(root, res);
         return res;
     }

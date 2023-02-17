@@ -40,7 +40,7 @@ public class ValidAnagram {
             if (map.get(t.charAt(i)) == 1) {
                 map.remove(t.charAt(i));
             } else {
-                map.compute(t.charAt(i), (k, v) -> (v == null) ? 0 : --v);
+                map.computeIfPresent(t.charAt(i), (k,v) -> --v);
             }
         }
         return map.size() == 0;
