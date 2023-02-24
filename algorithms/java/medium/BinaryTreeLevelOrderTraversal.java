@@ -7,13 +7,13 @@ import java.util.List;
 
 /**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class TreeNode.sql {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *     TreeNode.sql left;
+ *     TreeNode.sql right;
+ *     TreeNode.sql() {}
+ *     TreeNode.sql(int val) { this.val = val; }
+ *     TreeNode.sql(int val, TreeNode.sql left, TreeNode.sql right) {
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
